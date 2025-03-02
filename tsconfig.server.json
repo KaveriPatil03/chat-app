@@ -1,0 +1,29 @@
+// {
+//   "extends": "./tsconfig.json",
+//   "complierOptions": {
+//     "module": "CommonJS",
+//     "target": "ES2017",
+//     "outDir": "./dist",
+//     "moduleResolution": "Node",
+//     "strict": true,
+//     "noEmit": false,
+//     "isolatedModules": false
+//   },
+//   "include": [
+//     "server.mts", // or any other server-side files you want to compile
+//     "server/**/*.mts" // You can use wildcards if needed
+//   ]
+// }
+
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["server.mts", "path/to/other/server/files"]
+}
